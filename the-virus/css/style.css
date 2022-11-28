@@ -1,0 +1,99 @@
+*, html {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Balsamiq Sans", cursive;
+  margin: 30px;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #0fa,
+    0 0 49px #0fa,
+    0 0 72px #0fa;
+  letter-spacing: 5px;
+}
+
+.skor-kamu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Balsamiq Sans", cursive;
+  margin: 10px;
+  color: white;
+  text-shadow: 0px 0px 43px rgba(136,218,166,1);
+}
+
+button {
+  display: block;
+  margin: auto;
+  width: 90px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: bolder;
+  font-family: "Balsamiq Sans", cursive;
+  border: 3px solid #88daa6;
+  border-radius: 8px;
+  color: #88daa6;
+  background-color: #333;
+  transition: .2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #88daa6;
+  color: #333;
+  box-shadow: 0px 0px 20px 0px rgba(136,218,166,1);
+-webkit-box-shadow: 0px 0px 20px 0px rgba(136,218,166,1);
+-moz-box-shadow: 0px 0px 20px 0px rgba(136,218,166,1);
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  cursor: url(../img/palu1.png), auto;
+}
+
+.container:active {
+  cursor: url(../img/palu2.png), auto;
+}
+
+.batu {
+  width: 200px;
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.batu::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: url(../img/batu.png) bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  bottom: -20px;
+  stroke: 2px black;
+}
+
+.virus {
+  width: 100%;
+  height: 100%;
+  background: url(../img/virus.png) bottom center no-repeat;
+  background-size: 40%;
+  position: absolute;
+  top: 100px;
+  transition: top 0.3s;
+}
+
+.batu.muncul .virus {
+  top: -15px;
+}
