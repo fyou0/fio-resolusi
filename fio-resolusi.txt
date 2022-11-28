@@ -1,3 +1,5 @@
 FIO RESOLUSI
 - Dapat memahami cara penggunaan GitHub
 - Belajar Flutter/Dart
+- Bercita-cita memiliki cita-cita
+- Membuat aplikasi sederhana
